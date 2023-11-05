@@ -31,4 +31,7 @@ jobs:
           tags: |
             tanaskovicdavid/tanaskovicdavidlb-324:latest
             tanaskovicdavid/tanaskovicdavidlb-324:${{ github.sha }}
+
+      - name: Render deployment
+        run: curl -X POST https://api.render.com/deploy/srv-cl3ro8quuipc738keq5g?key=mGAdT5FkXqc      
             
